@@ -1,0 +1,120 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background : url(../images/pexels-mario-cuadros-1166886-13043589.jpg);
+    backdrop-filter: blur(30px);
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.header {
+    width: 100% ;
+    height: 70px;
+    background-color: #a0ffa80d ;
+    overflow: auto;
+}
+.header-container{
+    width: 90%;
+    margin: auto;
+}
+.img1 {
+    width: 200px;
+    height: 65px ;
+    margin-left: 200px;
+    float: left;
+}
+
+.ul1 {
+    list-style: none;
+    float: right;
+}
+
+/* nesting  */
+.ul1   li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.ul1  li  a {
+    text-decoration: none;
+    color :#fff;
+}
+.ul1  li  a:hover{
+    text-decoration: underline;
+    color :#fff;
+}
+
+.li6 {
+    margin-right: 150px;
+}
+
+
+.team{
+    width: 10%;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9, 70, 201);
+    padding: 15px 20px;
+        border-radius: 10px;
+
+}
+.team img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.team p{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    
+}
+/* Container for the cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid rgba(221, 221, 221, 0.582);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(29, 103, 240, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: rgb(9, 70, 201);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #3cb815;
+}
+
+#color{
+    background-color:black;
+
+}
+ 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="css/checkOut.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="header-container">
+      <img class="img1" src="images/Football_Shop_Online_Logo.webp" alt="logo img">
+      <ul class="ul1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="edit_profile.html">Edit Profile</a></li>
+        <li><a href="#">Check Out</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="row">
+    <div class="container summary-box">
+      <div class="summary-section">
+        <h2>Order Summary</h2>
+      </div>
+      <div class="summary-section">
+        <p>Total items: <span id="summaryItems">3</span></p>
+      </div>
+      <div class="summary-section">
+        <p>Total quantity: <span id="summaryQuantity">60</span></p>
+      </div>
+      <div class="summary-section">
+        <p>Total price: $<span id="summaryPrice">180</span></p>
+      </div>
+    </div>
+    <div class="container checkout-box">
+      <h1>Checkout</h1>
+      <form id="checkoutForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="payment">Payment Method (Visa / Cash)</label>
+        <input type="text" id="payment" name="payment" required>
+
+        <label for="payment">visa number (if you entered visa)</label>
+        <input type="number" id="payment" name="payment">
+        
+
+        <label for="return">Return item?</label>
+        <input type="text" id="payment" name="payment" required placeholder="Enter Return item details">
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="farewell">
+    <p>Thank you for visiting our website!</p>
+  </div>
+  <footer>
+    <p>&copy; 2024 E-Commerce Website Mina George Team. All rights reserved.</p>
+  </footer>
+</body>
+</html>

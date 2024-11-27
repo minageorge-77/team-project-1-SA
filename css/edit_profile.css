@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-transform: capitalize;
+    background: url(../images/pexels-mario-cuadros-1166886-13043589.jpg) no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    font-family: "Quicksand", sans-serif;
+}
+/* /////////////////////////////////////////// start header ////////////////////////////////////////////////////// */
+.header {
+    width: 100% ;
+    height: 70px;
+    background-color: #a0ffa80d ;
+    overflow: auto;
+}
+.header-container{
+    width: 90%;
+    margin: auto;
+}
+.img1 {
+    width: 200px;
+    height: 65px ;
+    margin-left: 200px;
+    float: left;
+}
+
+.ul1 {
+    list-style: none;
+    float: right;
+}
+
+/* nesting  */
+.ul1   li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.ul1  li  a {
+    text-decoration: none;
+    color :#fff;
+}
+.ul1  li  a:hover{
+    text-decoration: underline;
+    color :#fff;
+}
+
+.li6 {
+    margin-right: 150px;
+}
+
+/* /////////////////////////////////////////// end header ////////////////////////////////////////////////////// */
+
+/* =============== Start profile-picture container style ============= */
+
+
+/* Hide file input */
+#file-input {
+  display: none;
+}
+
+/* Styles for profile picture container */
+.profile-picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 25px auto;
+  border-style: none;
+  border-radius: 75px;
+  
+}
+.profile-picture:hover{
+    transition: 0.3s;
+    scale: 1.02;
+}
+
+/* Styles for profile picture */
+#profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Styles for label */
+.image-label {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+/* Styles for label span */
+.image-label span {
+  display: none;
+}
+/* =========== End profile-picture container style =============*/
+/* =========== Start edit profile container style ============ */  
+
+.container{
+    max-width: 650px;
+    margin: 85px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+label{
+    display: block;
+    margin-bottom: 4px;    
+}
+.gender{
+    display: ruby;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 15px;
+}
+button:hover{
+    transition: 0.2s;
+    background-color: #3cb815;
+    scale: 1.02;
+    cursor: pointer;
+    color: white;
+}
+/* =========== End edit profile container style ============ */  

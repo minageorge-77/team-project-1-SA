@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/edit_profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="media/icons/user-icon.svg"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+       <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+       <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+       <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'> 
+        <title>edit profile</title>
+    </head>
+    <body>
+<!-- //////////////////////////////////////// start header /////////////////////////////////////////////////////// -->
+        <div class="header">
+           <div class="header-container">
+                <img class="img1" src="images/Football_Shop_Online_Logo.webp" alt="logo iimg">
+                <ul class="ul1">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li>  <a href="login.html">Login</a> </li>
+                    <li> <a href="#">edit profile</a> </li>
+                    <li> <a  href="checkOut.html">check out</a> </li>
+                </ul>
+           </div>
+       </div>
+<!-- //////////////////////////////////////// end header /////////////////////////////////////////////////////// -->
+        <div class="container" style="box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);">
+            <h1><i class="fa-solid fa-user"></i>  edit profile</h1>
+                <div class="picture-container">
+                    <h3 style="text-align: center;">profile picture</h3>
+                    <div class="profile-picture">
+                        <input type="file" id="file-input" accept="image/*">
+                        <label class="image-label" for="file-input">
+                        <img id="profile-img" src="media/images/my_profile_image.png" alt="Profile Picture">
+                        <span>Change Picture</span>
+                        </label>
+                    </div>
+                </div>
+    <!--      ==========  End profile picture modification  ============-->
+    <!--         ================= start the form =================-->
+            <div class="form-container">
+                <form>
+                <div class="input-boxes">
+                    <label for="fname">first name:</label>
+                    <input type="text" id="fname" name="fname" value="Mina" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="sname">second name:</label>
+                    <input type="text" id="sname" name="sname" value="George" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="email"> <i class="fa-solid fa-envelope"></i> Email:</label>
+                    <input id="email" type="email" name="email" value="mina@gmail.com" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="password"> <i class="fa-solid fa-lock"></i> password:</label>
+                    <input type="password" id="password" name="password"  value="123456" required>
+                </div>
+                <div class="input-boxes">
+                    <label for="cpassword">confirm password:</label>
+                    <input type="password" id="cpassword" name="cpassword" value="123456"  required>
+                </div>
+                <div class="gender">
+                    <p> <i class="fa-solid fa-person"></i> gender:</p>
+                    <input type="radio" id="male" name="gender" value="male"  required checked>
+                    <label for="radio">male <i class="fa-solid fa-mars"></i> </label>
+                    
+                    <input type="radio" id="female" name="gender" value="female"  required>
+                    <label for="radio">female <i class="fa-solid fa-venus"></i></label>
+                </div>
+                    <br>
+                <button type="submit">Confirm Changes</button>
+                <button type="reset">Cancel Changes</button>
+            </form>
+            </div>
+        </div>       
+</body>
+</html>
